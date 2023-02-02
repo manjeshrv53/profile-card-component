@@ -48,6 +48,27 @@ video {
   padding: 2.8rem 1.6rem;
   display: grid;
   place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.pattern-top,
+.pattern-bottom {
+  position: absolute;
+  z-index: -1;
+  width: 62rem;
+}
+
+.pattern-top {
+  top: 0;
+  left: 0;
+  transform: translate(-70%, -50%);
+}
+
+.pattern-bottom {
+  bottom: 0;
+  right: 0;
+  transform: translate(70%, 50%);
 }
 
 .card {
@@ -153,6 +174,18 @@ video {
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .pattern-top,
+  .pattern-bottom {
+    width: 98rem;
+  }
+
+  .pattern-top {
+    transform: translate(-30%, -50%);
+  }
+
+  .pattern-bottom {
+    transform: translate(30%, 50%);
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
