@@ -184,6 +184,7 @@ video {
   }
 
   .pattern-bottom {
+    width: 110rem;
     transform: translate(30%, 70%);
   }
 }
